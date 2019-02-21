@@ -120,6 +120,10 @@ button[disabled]{
     background-image: url(../images/CTAgray.svg);
 }
 
+button:focus {
+    outline: 0;
+}
+
 article:last-of-type {
     margin-bottom: 0;
 }
@@ -185,9 +189,7 @@ section:nth-of-type(3) > h4 {
         vertical-align: middle;
         margin-right: 1em;
     }
-    iframe.uitklappen {
-        height: 30em;
-    }
+
     ul {
         margin-top: 0;
         width: 100%
