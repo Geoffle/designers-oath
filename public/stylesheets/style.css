@@ -1,11 +1,29 @@
+@keyframes tra {
+    100% {
+        transform: scale(1.1);
+    }
+}
+
 body {
-    margin-left: .8em;
-    margin-right: .8em;
+    margin-left: 1em;
+    margin-right: 1em;
     line-height: 1.5em;
+    background-color: #F2F3E7;
 }
 
 header {
-    height:
+    border-bottom: 2px solid black;
+    width: 50%;
+}
+
+footer {
+    margin-bottom: 2em;
+    opacity: 0;
+    transition: all 1s;
+}
+
+footer.uitklappen {
+    opacity: 1;
 }
 
 article img {
@@ -15,6 +33,7 @@ article img {
 h1 {
     font-family: 'Poppins', sans-serif;
     font-weight: bold;
+    line-height: 1.4em;
 }
 
 p {
@@ -55,7 +74,8 @@ iframe.uitklappen {
 section div:first-of-type {
     display: flex;
     justify-content: space-between;
-    width: 12em;
+    width: 20em;
+    margin-top: 0;
 }
 
 div:first-of-type p {
@@ -65,66 +85,85 @@ div:first-of-type p {
 
 article:last-of-type h4 {
     font-family: 'Anonymous Pro', monospace;
-    font-size: 1.5em;
     font-weight: normal;
 }
 
+button {
+    -webkit-appearance: none;
+    height: 2.5rem;
+    width: 4rem;
+    line-height: 1.5rem;
+    margin-top: 1em;
+    color: #F2F3E7;
+    background-image: url(../images/CTAblack.svg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 6em;
+    background-color: transparent;
+    border: 0;
+    transition: all;
+}
+
+button:hover {
+    animation-name: tra;
+    animation-duration: 1s;
+}
+
+article:last-of-type {
+    margin-bottom: 0;
+}
+
+footer div:first-of-type img:nth-of-type(3),
+footer div:first-of-type img:nth-of-type(1) {
+    margin-right: 4.4em;
+    margin-left: 0;
+}
+
+footer div:last-of-type img:nth-of-type(3),
+footer div:last-of-type img:nth-of-type(1) {
+    margin-right: 4.4em;
+    margin-left: 0;
+}
+
+footer img {
+    margin-bottom: 1em;
+}
+
 @media (min-width:36.25em) {
-    section:first-of-type {
-        margin-left: 4em;
-        margin-right: 4em;
-        margin-top: 4em;
+    body {
+        width: 50em;
+        margin: 0 auto;
     }
-    section:nth-of-type(2) {
-        margin-left: 4em;
-        margin-right: 4em;
+    section:first-of-type p {
+        font-size: 1.2em;
+        line-height: 1.4em;
+    }
+    section:first-of-type {
+        margin-top: 4em;
     }
     section:nth-of-type(2) span {
         display: flex;
         justify-content: space-between;
         width: 30em;
     }
-    section:nth-of-type(2) span button {
-        -webkit-appearance: none;
-        height: 1.5rem;
-        width: 4rem;
-        line-height: 1.5rem;
-        margin-top: 2em;
-    }
     article {
         display: flex;
         justify-content: space-between;
         width: 50em;
-        margin: 1.5em auto;
+        margin: 2em auto;
     }
-    h1 {
-        text-align: center;
+    article:nth-of-type(5) {
+        margin-bottom: 0;
     }
     h1 img {
         vertical-align: middle;
+        margin-right: 1em;
     }
     iframe.uitklappen {
-        height: 25em;
+        height: 30em;
     }
     ul {
-        width: 40em;
         margin-top: 0;
-    }
-    section:nth-of-type(3) h2 {
-        margin-left: 15rem
-    }
-    h3 {
-        margin-left: 15rem;
-    }
-    section:nth-of-type(3) > h4 {
-        margin-left: 15rem;
-    }
-    main section:last-of-type div {
-        margin-left: 15rem;
-    }
-    footer {
-        width: 50em;
-        margin: 0 auto;
     }
     h4 {
         width: 10em;
@@ -148,16 +187,45 @@ article:last-of-type h4 {
     }
     article img {
         width: 8em;
-        margin: 1em;
         display: block;
         margin-bottom: auto;
         margin-top: .3em;
+        margin-left: 0;
+        margin-right: 0;
     }
     article:last-of-type h4 {
         display: block;
-        margin-left: 1em;
+        font-size: 1.5em;
+        line-height: 1.4em;
+    }
+    section:nth-of-type(3) > h4:first-of-type {
+        display: block;
     }
     li {
         font-size: 1.5em;
+        line-height: 1.4em;
+    }
+    header {
+        width: 100%;
+    }
+    footer div img {
+        margin: 0;
+    }
+    footer div {
+        display: flex;
+        justify-content: space-between;
+        margin: 2em;
+        margin-left: 0;
+        margin-right: 0;
+    }
+    footer div:first-of-type img:nth-of-type(3),
+    footer div:first-of-type img:nth-of-type(1) {
+        margin-right: 0em;
+        margin-left: 0;
+    }
+    footer div:last-of-type img:nth-of-type(3),
+    footer div:last-of-type img:nth-of-type(1) {
+        margin-right: 0em;
+        margin-left: 0;
     }
 }
