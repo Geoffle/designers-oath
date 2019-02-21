@@ -115,6 +115,11 @@ button:hover {
     animation-duration: 1s;
 }
 
+button:disabled,
+button[disabled]{
+    background-image: url(../images/CTApurple.svg);
+}
+
 article:last-of-type {
     margin-bottom: 0;
 }
