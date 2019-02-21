@@ -1,13 +1,82 @@
+body {
+    margin-left: .8em;
+    margin-right: .8em;
+}
+
 header {
-    height: 3em;
+    height:
 }
+
 h1 {
-    font-size: 2em;
     font-family: 'Poppins', sans-serif;
+    font-weight: bold;
 }
+
 p {
     font-family: 'Anonymous Pro', monospace;
 }
+
 h2 {
-   font-family: 'Poppins', sans-serif;
+    font-family: 'Poppins', sans-serif;
+    font-weight: bold;
+}
+
+h3 {
+    font-family: 'Poppins', sans-serif;
+    font-weight: bold;
+}
+
+h4 {
+    font-family: 'Poppins', sans-serif;
+    font-weight: bold;
+}
+
+li {
+    font-family: 'Anonymous Pro', monospace;
+}
+
+iframe {
+    width: 100%;
+    height: 15em;
+}
+
+@media (min-width:36.25em) {
+    article {
+        display: flex;
+        justify-content: space-between;
+        width: 50em;
+        margin: 0 auto;
+    }
+    iframe {
+        height: 21em;
+    }
+    ul {
+        width: 30em;
+    }
+    section:nth-of-type(3) h2 {
+        margin-left: 14rem
+    }
+    h3 {
+        margin-left: 14rem;
+    }
+    section:nth-of-type(3) > h4 {
+        margin-left: 14rem;
+    }
+    main section:last-of-type div {
+        margin-left: 14rem;
+    }
+    footer {
+        width: 50em;
+        margin: 0 auto;
+    }
+    h4 {
+        width: 10em;
+        margin-top: .7em;
+    }
+    article:nth-of-type(6) h4 {
+        width: 10em;
+    }
+    article:last-of-type h4{
+        width: 100%;
+    }
 }
