@@ -67,14 +67,14 @@ li {
 
 iframe {
     width: 100%;
-    height: 20em;
+    height: 15em;
     display: none;
 }
 
 iframe.uitklappen {
     display: block;
     width: 100%;
-    height: 15em;
+    height: 40em;
 }
 
 section div:first-of-type {
