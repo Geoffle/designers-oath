@@ -117,7 +117,7 @@ button:hover {
 
 button:disabled,
 button[disabled]{
-    background-image: url(../images/CTApurple.svg);
+    background-image: url(../images/CTAgray.svg);
 }
 
 article:last-of-type {
