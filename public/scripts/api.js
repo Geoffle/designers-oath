@@ -1,5 +1,4 @@
 var sign = document.querySelector("#sign");
-var download = document.querySelector("#download");
 
 // GET data and push to #signature-counter
 function getCounter() {
