@@ -1,7 +1,5 @@
 var quizzButton = document.querySelector("main section:nth-of-type(2) button");
 var quizz = document.querySelector("main section:nth-of-type(2) iframe");
-var signElement = document.querySelector("main section:last-of-type p");
-var signGetal = parseInt(signElement.innerText);
 var signButton = document.querySelector("div button");
 var downloadGedeelte = document.querySelector("footer");
 
@@ -15,3 +13,7 @@ function quizzAan() {
 
 quizzButton.addEventListener("click", quizzAan);
 signButton.addEventListener("click", downloadAan);
+
+if (/Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent)) {
+    $("#mobile-link").attr("href", "fb://Thedesignersoath-764575913924713/764575913924713");
+}
