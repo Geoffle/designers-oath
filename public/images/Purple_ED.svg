@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="134px" height="72px" viewBox="0 0 134 72" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 52.5 (67469) - http://www.bohemiancoding.com/sketch -->
+    <title>Purple Ethic</title>
+    <desc>Created with Sketch.</desc>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="EthicalDesign" transform="translate(-20.000000, -20.000000)">
+            <g id="Purple-Ethic" transform="translate(20.000000, 20.000000)">
+                <path d="M61,72 L0,72 L0,0 L61,0 C61,3.3137085 63.6862915,6 67,6 C70.3137085,6 73,3.3137085 73,0 L134,0 L134,72 L73,72 C73,68.6862915 70.3137085,66 67,66 C63.6862915,66 61,68.6862915 61,72 Z" id="Combined-Shape" fill="#94A2F7"></path>
+                <text id="et-hi-c" font-family="AnonymousPro-Regular, Anonymous Pro" font-size="12" font-weight="normal" fill="#000000">
+                    <tspan x="16" y="20">et hi c</tspan>
+                </text>
+                <text id="starts-here" transform="translate(115.000000, 36.000000) rotate(90.000000) translate(-115.000000, -36.000000) " font-family="AnonymousPro-Regular, Anonymous Pro" font-size="8" font-weight="normal" fill="#000000">
+                    <tspan x="90.5" y="40">starts here</tspan>
+                </text>
+                <text id="de-si-gn" font-family="AnonymousPro-Regular, Anonymous Pro" font-size="12" font-weight="normal" fill="#000000">
+                    <tspan x="16" y="60">de si    gn</tspan>
+                </text>
+                <text id="a-l" font-family="AnonymousPro-Regular, Anonymous Pro" font-size="12" font-weight="normal" fill="#000000">
+                    <tspan x="57.1738281" y="39">a l</tspan>
+                </text>
+            </g>
+        </g>
+    </g>
+</svg>
