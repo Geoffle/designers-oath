@@ -3,7 +3,7 @@ var sign = document.querySelector("#sign");
 // GET data and push to #signature-counter
 function getCounter() {
     $.get("https://designers-oath-signatures.herokuapp.com/api/count", function(data) {
-        $("#signature-counter").html(data.count);
+        $("#signature-counter").html("(" + data.count + ")");
     });
 }
 
