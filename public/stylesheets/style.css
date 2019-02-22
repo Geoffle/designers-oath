@@ -97,14 +97,14 @@ article:last-of-type h4 {
 button {
     -webkit-appearance: none;
     height: 2.5rem;
-    width: 4rem;
+    width: 5rem;
     line-height: 1.5rem;
     margin-top: 1em;
     color: #f2f3e7;
     background-image: url(../images/CTAblack.svg);
     background-repeat: no-repeat;
     background-position: center;
-    background-size: 6em;
+    background-size: 7em;
     background-color: transparent;
     border: 0;
     transition: all;
