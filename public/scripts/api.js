@@ -1,9 +1,17 @@
 var sign = document.querySelector("#sign");
 
-// GET data and push to #signature-counter
-$.get("https://designers-oath-signatures.herokuapp.com/api/count", function(data) {
-    $("#signature-counter").html(data.count);
-});
+function refresh() {
+    // GET data and push to #signature-counter
+    $.get("https://designers-oath-signatures.herokuapp.com/api/count", function(data) {
+        $("#signature-counter").html(data.count);
+    });
+
+    setTimeout(function () {
+        refresh();
+    }, 60000);
+}
+
+refresh();
 
 // POST data to the api when the element with #sign is clicked
 sign.addEventListener("click", function() {
