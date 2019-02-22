@@ -14,6 +14,6 @@ function quizzAan() {
 quizzButton.addEventListener("click", quizzAan);
 signButton.addEventListener("click", downloadAan);
 
-if (/Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent)) {
-    $("#mobile-link").attr("href", "fb://page/764575913924713");
-}
+// if (/Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent)) {
+//     $("#mobile-link").attr("href", "fb://page/764575913924713");
+// }
