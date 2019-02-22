@@ -12,7 +12,7 @@ function refresh() {
 
     setTimeout(function() {
         refresh();
-    }, 60000);
+    }, 600000);
 }
 
 refresh();
