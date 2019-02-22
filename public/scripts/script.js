@@ -15,5 +15,5 @@ quizzButton.addEventListener("click", quizzAan);
 signButton.addEventListener("click", downloadAan);
 
 if (/Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent)) {
-    $("#mobile-link").attr("href", "fb://Thedesignersoath-764575913924713/764575913924713");
+    $("#mobile-link").attr("href", "fb://page/764575913924713");
 }
