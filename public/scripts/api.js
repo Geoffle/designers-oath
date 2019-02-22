@@ -1,12 +1,16 @@
 var sign = document.querySelector("#sign");
 
-function refresh() {
-    // GET data and push to #signature-counter
+// GET data and push to #signature-counter
+function getCounter() {
     $.get("https://designers-oath-signatures.herokuapp.com/api/count", function(data) {
         $("#signature-counter").html(data.count);
     });
+}
 
-    setTimeout(function () {
+function refresh() {
+    getCounter();
+
+    setTimeout(function() {
         refresh();
     }, 60000);
 }
@@ -17,10 +21,9 @@ refresh();
 sign.addEventListener("click", function() {
     $("#sign").attr("disabled", "disabled");
 
-    $.post("https://designers-oath-signatures.herokuapp.com/api/sign", { email: "signed with no e-mail address" })
-        .done(function() {
-            $.get("https://designers-oath-signatures.herokuapp.com/api/count", function(data) {
-                $("#signature-counter").html(data.count);
-            });
-        });
+    $.post("https://designers-oath-signatures.herokuapp.com/api/sign", { email: "signed with no e-mail address" }).done(
+        function() {
+            getCounter();
+        }
+    );
 });
