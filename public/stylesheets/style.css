@@ -124,10 +124,15 @@ button:hover {
 button:disabled,
 button[disabled] {
     background-color: gainsboro;
+    color: gray;
 }
 
 button:focus {
     outline: 0;
+}
+body > section:last-of-type{
+    margin-top: 2em;
+    border-top: 2px solid black
 }
 
 article:last-of-type {
@@ -209,10 +214,14 @@ section:nth-of-type(3) > h4 {
         display: none;
     }
     article:nth-of-type(4) img {
-        width: 18em;
+        width: 16em;
+        height: 7em;
     }
     article:nth-of-type(4) img:last-of-type {
-        width: 5.28em;
+        width: 7em;
+    }
+     article:nth-of-type(4) img:nth-of-type(2) {
+        width: 17.7em;
     }
     article:nth-of-type(4) {
         margin-top: 0;
@@ -277,21 +286,21 @@ section:nth-of-type(3) > h4 {
         margin-left: 0;
     }
     article:nth-of-type(2) {
-    height: 6em;
+    height: 8.5em;
     }
     article:nth-of-type(1) {
     height: 8em;
     }
     article:nth-of-type(3) {
-    height: 5em;
+    height: 9.4em;
     }
     article:nth-of-type(4) {
     height: 7.5em;
     }
     article:nth-of-type(5) {
-    height: 10em;
+    height: 6.9em;
     }
     article:nth-of-type(6) {
-    height: 10em;
+    height: 6.4em;
     }
 }
